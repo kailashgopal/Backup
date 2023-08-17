@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\title{Archie vs the gradient descenders}
+\author{Kailash Gopal D ee22b009}
+\date{June 2023}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Introduction}
+	\begin{itemize}
+		\item The purpose of gradient descent is to converge to the global minimum.
+		\item The global minimum is a point where the directional derivative is zero in all directions. 
+		\item However, the algorithm in many cases stumbles upon saddle points since even in that case the directional derivative is zero in all directions.
+		\item This is not a global minimum since it is a minimum along one direction and a maximum along another direction.
+		\item This frustration of the directional derivatives alone not being enough to determine extrema is seen on the man's face.
+	\end{itemize}
+	\section{The Section that will win a treat}
+	\begin{enumerate}
+		\item \textit{The Fourier Transform:}\begin{equation}
+			f(\omega) = \int_{-\infty}^{\infty}f(x)e^{-2\pi ix\omega}dx
+		\end{equation}
+		\item \textit{The Normal Distribution}\begin{equation}
+			\phi(x) = \frac{1}{\sqrt{2\pi\rho}}e^{\frac{(x-\mu)^2}{2\rho^2}}
+		\end{equation}
+		\item \textit{The generator function associated to collatz conjecture}
+		\begin{equation}
+			Y(i,k) = 
+			\left\{
+			\begin{array}{lr}
+				n/2, & \text{if n} \equiv \text{(0 mod 2)} \\
+				3n + 1, & \text{if n} \equiv \text{(1 mod 2)}
+			\end{array}
+			\right.
+		\end{equation}
+	\end{enumerate}
+\end{document}
